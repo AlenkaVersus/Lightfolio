@@ -380,11 +380,14 @@ footer div ul{
     max-width:1248px;
     margin: auto;
 }
-.ui-accordion .ui-accordion-header {
+.ui-accordion .ui-accordion-header{
     background-color: transparent;
     padding: 15px 10px;
     border: solid black 1px;
     border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    order:1;
 }
 .ui-state-active{
     color: black;
@@ -399,4 +402,24 @@ footer div ul{
     background-color: #FFEBD8;
     border-bottom: none;
     border-radius: 18px 18px 0 0;
+}
+.ui-icon{
+    background-image:url(../images/icon_font_left.svg);
+    width:23px;
+    order:2;
+}
+.ui-state-active .ui-icon{
+    background-image:url(../images/icon_font_left.svg);
+}
+.ui-icon-triangle-1-e{
+    background-position:70% 40%;
+}
+.ui-accordion .ui-accordion-header.ui-state-active .ui-icon-triangle-1-s{
+    background-position:70% 40%;
+    transform:rotate(180deg);
+    transition:transform 0.2s;
+}
+.ui-state-hover .ui-icon {
+    background-image:url(../images/icon_font_left.svg);
+    background-position:70% 40%;
 }
